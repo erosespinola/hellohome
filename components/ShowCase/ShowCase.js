@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import styles from './ShowCase.module.scss';
 
 const HOMES_DATA = {
@@ -64,34 +65,41 @@ const HOMES_DATA = {
   },
 };
 
-const Home = ({ id }) => (
-  <div className={styles.card}>
-    <div className={styles.home}>
+const Home = ({ id }) => {
+  const [show, setShow] = useState(false);
+
+  return (
+    <div className={styles.card}>
       <div
-        className={styles.front}
-        style={{ backgroundImage: `url(${id}.jpg)` }}
+        onClick={() => setShow(!show)}
+        className={`${styles.home} ${show ? styles.reveal : ''}`}
       >
-        <div className={styles.tap}>
-          <img height="25" src="tap.png" />
+        <div
+          className={styles.front}
+          style={{ backgroundImage: `url(${id}.jpg)` }}
+        >
+          <div className={styles.tap}>
+            <img height="25" src="tap.png" />
+          </div>
+          {HOMES_DATA[id].sold && <span className={styles.sold}>Vendida</span>}
+          {HOMES_DATA[id].coming && (
+            <span className={styles.coming}>Próximamente</span>
+          )}
         </div>
-        {HOMES_DATA[id].sold && <span className={styles.sold}>Vendida</span>}
-        {HOMES_DATA[id].coming && (
-          <span className={styles.coming}>Próximamente</span>
-        )}
-      </div>
-      <div className={styles.back}>
-        <p>
-          <b>Características:</b>
-        </p>
-        <ul>
-          {(HOMES_DATA[id].data || []).map((line, i) => (
-            <li key={`line-${i}`}>{line}</li>
-          ))}
-        </ul>
+        <div className={styles.back}>
+          <p>
+            <b>Características:</b>
+          </p>
+          <ul>
+            {(HOMES_DATA[id].data || []).map((line, i) => (
+              <li key={`line-${i}`}>{line}</li>
+            ))}
+          </ul>
+        </div>
       </div>
     </div>
-  </div>
-);
+  );
+};
 
 export default function ShowCase() {
   return (
