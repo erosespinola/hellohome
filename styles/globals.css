@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yesteryear&display=swap');
+
+:root {
+  --main-color: #0e7c80;
+  --off-white: #f6fbf9;
+  --mobile-size: 800px;
+  --background: #f3f3f3;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  font-family: 'Roboto Slab', serif;
+  background-color: var(--background);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+p {
+  line-height: 2rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+input,
+textarea {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  cursor: text;
+  border: 2px #ddd solid;
+  border-radius: 5px;
+  box-shadow: 0px 6px 16px rgb(0 0 0 / 12%);
+  background: rgba(255, 255, 255, 0.8);
+  transition: background-color 0.2s ease;
+  padding: 1rem;
+  resize: none;
+  width: 100% !important;
+}
+
+input:focus-visible,
+textarea:focus-visible {
+  border-color: var(--main-color);
+  outline: var(--main-color);
+}
+
+textarea:hover,
+input:hover {
+  background: rgba(255, 255, 255, 1);
+}
+
+a {
+  font-family: 'Roboto';
+  color: var(--main-color);
+  padding: 0.6rem 1.25rem;
+  font-size: 1rem;
+  border: 1px solid #e5e5e4;
+  margin: 0;
+  border-radius: 0.5rem;
+  background-color: #e5e5e4;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a img {
+  margin-right: 10px;
+}
