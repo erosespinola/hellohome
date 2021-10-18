@@ -12,6 +12,9 @@ export default function Hero() {
     });
 
     observer.observe(document.querySelector(`.${styles['hero-img']}`));
+    return () => {
+      observer.disconnect();
+    };
   });
 
   return (

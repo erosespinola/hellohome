@@ -30,3 +30,11 @@
     padding: 20px 50px;
   }
 }
+
+@media only screen and (max-width: 460px) {
+  .menu {
+    span {
+      display: none;
+    }
+  }
+}
