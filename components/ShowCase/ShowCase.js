@@ -91,7 +91,7 @@ const Home = ({ id }) => {
           )}
         </div>
         <div className={styles.back}>
-          <p>
+          <p className={styles.features}>
             <b>Características:</b>
           </p>
           <ul>
