@@ -71,6 +71,10 @@
     .coming {
       background: sandybrown;
     }
+
+    .sale {
+      background: rgb(114, 187, 103);
+    }
   }
 
   .front {
@@ -131,5 +135,11 @@
 @media only screen and (max-width: 900px) {
   .container {
     padding: 30px 50px;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .container {
+    padding: 30px 20px;
   }
 }

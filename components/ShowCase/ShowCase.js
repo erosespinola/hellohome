@@ -19,6 +19,7 @@ const HOMES_DATA = {
   },
   home2: {
     sold: false,
+    sale: true,
     data: [
       <p>
         60m<sup>2</sup> de construcción
@@ -81,6 +82,9 @@ const Home = ({ id }) => {
           <div className={styles.tap}>
             <img height="25" src="tap.png" />
           </div>
+          {HOMES_DATA[id].sale && (
+            <span className={styles.sale}>Disponible</span>
+          )}
           {HOMES_DATA[id].sold && <span className={styles.sold}>Vendida</span>}
           {HOMES_DATA[id].coming && (
             <span className={styles.coming}>Próximamente</span>
@@ -109,6 +113,9 @@ export default function ShowCase() {
           Encuentra tu nuevo hogar con{' '}
           <img style={{ marginLeft: 5 }} height="50" src="logo-white.png" />
         </h1>
+        <h2 style={{ color: 'white' }}>
+          Proyectos en <img src="pin.png" /> Cd. Constitución
+        </h2>
         <div className={styles.homes}>
           <Home id="home1" />
           <Home id="home3" />

@@ -18,7 +18,6 @@ export default function Contact() {
     <section id="contact" className={styles.contact}>
       <div className={styles.container}>
         <h1>Contáctanos</h1>
-        <img className={styles.banner} src="contact.jpg" />
         <div className={styles.form}>
           <h2>Correo</h2>
           <input ref={name} placeholder="Nombre" required />
