@@ -18,8 +18,7 @@ const HOMES_DATA = {
     ],
   },
   home2: {
-    sold: false,
-    sale: true,
+    sold: true,
     data: [
       <p>
         60m<sup>2</sup> de construcción
@@ -52,11 +51,29 @@ const HOMES_DATA = {
     coming: true,
     sold: false,
     data: [
+      <p>Dos plantas</p>,
       <p>
-        45m<sup>2</sup> de construcción
+        93m<sup>2</sup> de construcción
       </p>,
-      <p>Terreno 8x24m</p>,
-      <p>2 recámaras, 1 baño, cocina, sala/comedor</p>,
+      <p>Terreno 8x20m</p>,
+      <p>3 recámaras, 2 <sup>1/2</sup> baños, cocina, sala y comedor</p>,
+      <p>Tinaco de 1, 100lts y boiler de paso</p>,
+      <p>
+        Acabados: Puertas de madera, muros de yeso pulido, vitropiso cerámico,
+        ventanas de aluminio
+      </p>,
+    ],
+  },
+  home5: {
+    coming: true,
+    sold: false,
+    data: [
+     <p>Dos plantas</p>,
+      <p>
+        93m<sup>2</sup> de construcción
+      </p>,
+      <p>Terreno 8x20m</p>,
+      <p>3 recámaras, 2 <sup>1/2</sup> baños, cocina, sala y comedor</p>,
       <p>Tinaco de 1, 100lts y boiler de paso</p>,
       <p>
         Acabados: Puertas de madera, muros de yeso pulido, vitropiso cerámico,
@@ -114,13 +131,20 @@ export default function ShowCase() {
           <img style={{ marginLeft: 5 }} height="50" src="logo-white.png" />
         </h1>
         <h2 style={{ color: 'white' }}>
-          Proyectos en <img src="pin.png" /> Cd. Constitución
+          Proyectos en <img src="pin.png" /> La Paz, BCS
+        </h2>
+        <div className={styles.homes}>
+          <Home id="home4" />
+          <Home id="home5" />
+        </div>
+        <br/>
+        <h2 style={{ color: 'white' }}>
+          Proyectos en <img src="pin.png" /> Cd. Constitución, BCS
         </h2>
         <div className={styles.homes}>
           <Home id="home1" />
           <Home id="home3" />
           <Home id="home2" />
-          <Home id="home4" />
         </div>
       </div>
     </section>
