@@ -53,15 +53,15 @@ const HOMES_DATA = {
     data: [
       <p>Dos plantas</p>,
       <p>
-        93m<sup>2</sup> de construcción
+        98m<sup>2</sup> de construcción
       </p>,
-      <p>Terreno 8x20m</p>,
+      <p>Terreno 8x24m</p>,
       <p>3 recámaras, 2 <sup>1/2</sup> baños, cocina, sala y comedor</p>,
-      <p>Tinaco de 1, 100lts y boiler de paso</p>,
+      <p>Tinaco de 1, 100lts y boiler eléctrico</p>,
       <p>
-        Acabados: Puertas de madera, muros de yeso pulido, vitropiso cerámico,
-        ventanas de aluminio
-      </p>,
+        Acabados: Puertas de madera, cocina con barra de granito, walk-in closet en recamara principal, 
+        muros de yeso pulido, vitropiso cerámicoy ventanas de aluminio.
+      </p>
     ],
   },
   home5: {
@@ -135,7 +135,6 @@ export default function ShowCase() {
         </h2>
         <div className={styles.homes}>
           <Home id="home4" />
-          <Home id="home5" />
         </div>
         <br/>
         <h2 style={{ color: 'white' }}>

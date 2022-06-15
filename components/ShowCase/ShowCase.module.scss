@@ -87,6 +87,7 @@
     transform: rotateY(180deg);
     display: block;
     padding: 0;
+    overflow-y: auto;
 
     p,
     ul {
