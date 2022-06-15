@@ -60,7 +60,7 @@ const HOMES_DATA = {
       <p>Tinaco de 1, 100lts y boiler eléctrico</p>,
       <p>
         Acabados: Puertas de madera, cocina con barra de granito, walk-in closet en recamara principal, 
-        muros de yeso pulido, vitropiso cerámicoy ventanas de aluminio.
+        muros de yeso pulido, vitropiso cerámicoy ventanas de aluminio
       </p>
     ],
   },
