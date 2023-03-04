@@ -51,36 +51,20 @@ const HOMES_DATA = {
     coming: true,
     sold: false,
     data: [
-      <p>Dos plantas</p>,
+      <p>Una planta</p>,
       <p>
-        98m<sup>2</sup> de construcción
+        92m<sup>2</sup> de construcción
       </p>,
-      <p>Terreno 8x24m</p>,
-      <p>3 recámaras, 2 <sup>1/2</sup> baños, cocina, sala y comedor</p>,
-      <p>Tinaco de 1, 100lts y boiler eléctrico</p>,
+      <p>Terreno 8x25m</p>,
+      <p>3 recámaras, 2 baños, cocina, sala y comedor</p>,
+      <p>Walk-in closet en recámara principal</p>,
+      <p>Tinaco de 1, 100lts, cisterna de 2, 500lts y boiler eléctrico</p>,
       <p>
-        Acabados: Puertas de madera, cocina con barra de granito, walk-in closet en recamara principal, 
-        muros de yeso pulido, vitropiso cerámicoy ventanas de aluminio
+        Acabados: Puertas y cocina de madera alder, cocina con barra de granito, 
+        muros de yeso pulido, vitropiso cerámico y ventanas de aluminio
       </p>
     ],
-  },
-  home5: {
-    coming: true,
-    sold: false,
-    data: [
-     <p>Dos plantas</p>,
-      <p>
-        93m<sup>2</sup> de construcción
-      </p>,
-      <p>Terreno 8x20m</p>,
-      <p>3 recámaras, 2 <sup>1/2</sup> baños, cocina, sala y comedor</p>,
-      <p>Tinaco de 1, 100lts y boiler de paso</p>,
-      <p>
-        Acabados: Puertas de madera, muros de yeso pulido, vitropiso cerámico,
-        ventanas de aluminio
-      </p>,
-    ],
-  },
+  }
 };
 
 const Home = ({ id }) => {
