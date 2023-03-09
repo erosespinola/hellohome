@@ -38,6 +38,10 @@
     height: 100%;
     backface-visibility: hidden;
     background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
 
     display: flex;
 
